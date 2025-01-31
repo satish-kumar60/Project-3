@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sconde Cards</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            min-height: 730px;
+            background-color: #8BC6EC;
+            background-image: linear-gradient(135deg, #212c32 0%, #95abe2 100%);
+        }
+
+        .card {
+            width: 400px;
+            height: 600px;
+            background-color: aliceblue;
+            border-radius: 20px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 30%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            /* padding: 10px; */
+        }
+        .textBox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            /* padding: 10px; */
+            width: 80%;
+            /* text-align: center; */
+        }
+        #amountBox{
+            display: flex; 
+            justify-content: space-between;
+            width: 80%;
+            height: 10%;
+            border-radius: 10px;
+            background-color: #57b0ec;
+            align-items: center;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        .leftBox{
+            width: fit-content;
+            display: flex;
+            gap: 15px;
+            padding: 10px;
+            height: 100%;
+            align-items: center;
+        }
+        .imageBox img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .rightBox{
+            padding: 10px;
+        }
+        #payBox{
+            width: 80%;
+            height: 9%;
+            border-radius: 10px;
+            background-color: #0c032f;
+            color: white;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            /* cursor: pointer; */
+            box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        }
+        .cancelBox a{
+         text-decoration: none;
+         color: rgb(26, 24, 24);
+         font-weight: bold;
+         font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="New.jpg" alt="">
+            <div class="textBox">
+                <h2>Order Summary</h2>
+                <p>Razorpay is a full-stack financial services company, and a recently crowned Unicorn, which is committed
+                    to helping Indian businesses with comprehensive and innovative payment and business banking solutions
+                    built over robust technology to address the entire length and breadth of the payment and banking
+                    journey for any business.</p>
+                
+            </div>
+            <div id="amountBox">
+                <div class="leftBox">
+                    <div class="imageBox">
+                        <img src="Music.png" alt="">
+                    </div>
+                    <div id="texAmountBox">
+                        <p>Amount</p>
+                        <p>₹ 1000/year</p>
+                    </div>
+
+                </div>
+                <div class="rightBox">
+                    <a href="#">Change</a>
+                </div>
+            </div>
+            <button id="payBox">Proced to payment</button>
+            <div class="cancelBox">
+                <a href="#">Cancel order</a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
